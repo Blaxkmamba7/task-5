@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Learning </title>
+</head>
+<body>
+
+  <h1>JavaScript Learning Output</h1>
+  <p id="output"></p>
+
+  <button onclick="showResults()">Click Me</button>
+
+  <script>
+    function showResults() {
+
+      
+      let name = "Abdul";
+
+      
+      let a = 10;
+      let b = 5;
+
+      
+      let message = "Welcome to JavaScript";
+
+      
+      let isLearning = true;
+
+      
+      let comparison = (a > b);
+
+      
+      let fruits = ["Apple", "Banana", "Mango"];
+
+     
+      let person = {
+        name: name,
+        age: 20
+      };
+
+      
+      let loopResult = "";
+      for (let i = 0; i < fruits.length; i++) {
+        loopResult += fruits[i] + ", ";
+      }
+
+     
+      function greet() {
+        return "Hello " + person.name;
+      }
+
+      document.getElementById("output").innerHTML =
+        greet() + "<br>" +
+        message + "<br>" +
+        "Sum: " + (a + b) + "<br>" +
+        "Is Learning: " + isLearning + "<br>" +
+        "Comparison (a > b): " + comparison + "<br>" +
+        "Fruits: " + loopResult;
+    }
+  </script>
+
+</body>
+</html>
